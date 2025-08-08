@@ -15,7 +15,7 @@ loginBtn.addEventListener('click', () => {
   const pw = passwordInput.value;
   if (pw === '1234') {
     errorMsg.style.display = 'none';
-    window.location.href = '../DashboardGeneral/dashboard.html'; // Ruta corregida
+    window.location.href = 'dashboard.html'; // Ruta corregida
   } else {
     errorMsg.style.display = 'block';
   }
@@ -23,4 +23,5 @@ loginBtn.addEventListener('click', () => {
 
 passwordInput.addEventListener('keypress', e => {
   if (e.key === 'Enter') loginBtn.click();
+
 });
